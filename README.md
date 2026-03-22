@@ -1,6 +1,7 @@
+![Logo](/mod_image.png)
 # MqttTheSpire
 
-Small mod for **Slay the Spire 2** that publishes game events to an MQTT broker.
+This is a small mod for **Slay the Spire 2** that publishes live statistics of your current run to an MQTT broker, allowing you to integrate it into Home Assistant and such.
 
 ## What this can do so far
 * Sends a small number of events to an existing MQTT broker (like `Mosquitto`).
@@ -38,7 +39,7 @@ Otherwise, the game will try to load the `config.json` file as a mod (and fail).
 - `Password`: Password for the MQTT broker (optional).
 - `Topic`: The base topic for all published messages. (default: `slay_the_spire_2`)
 
-## MQTT Topics
+## Currently available MQTT Topics
 
 All topics are prefixed with the value of `Topic` from the config (e.g.: `slay_the_spire_2/run/total_floor`).  
 **Important**: Topics are not immediately published when the game starts. Starting a run should publish most of these, though.
@@ -55,9 +56,12 @@ All topics are prefixed with the value of `Topic` from the config (e.g.: `slay_t
 | `run/player/max_hp`     | Maximum HP.                                                   | 72                  |
 | `run/player/current_hp` | Current HP.                                                   | 37                  |
 
-## Other stuff
+## A few additional notes
 
-If you liked this mod, also check out **[The Guy Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3209372643)**, a fun custom character for the original Slay the Spire.
+* This mod has been exclusively developed and tested on Linux so far, using the native version of the game. While it should work on any platform, it is not guaranteed. If you get this mod working (or not), I'd appreciate feedback.
+* This mod makes use of [MQTTnet](https://github.com/dotnet/MQTTnet) for the actual communication with the MQTT broker. This should make it relatively stable against future updates, but given the game just released into Early Access, who knows.
+* Unlike a lot of other mods currently out there, this mod exclusively uses hooks already provided by the StS2 API and does not rely on Harmony at all.
+* If you liked this mod, also check out **[The Guy Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3209372643)**, a fun custom character for the original Slay the Spire.
 
 ## License
 
