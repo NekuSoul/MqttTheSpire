@@ -1,4 +1,4 @@
-![Logo](/mod_image.png)
+![Logo](/MqttTheSpire/mod_image.png)
 # MqttTheSpire
 
 This is a small mod for **Slay the Spire 2** that publishes live statistics of your current run to an MQTT broker, allowing you to integrate it into Home Assistant and such.
