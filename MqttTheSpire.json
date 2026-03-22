@@ -3,7 +3,7 @@
 	"name": "MqttTheSpire",
 	"author": "NekuSoul",
 	"description": "MQTT connection for Slay the Spire 2",
-	"version": "0.0.1",
+	"version": "1.0.0",
     "has_dll": true,
     "has_pck": true,
     "affectsGamePlay": false
