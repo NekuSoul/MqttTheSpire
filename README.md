@@ -59,8 +59,8 @@ All topics are prefixed with the value of `Topic` from the config (e.g.: `slay_t
 ## A few additional notes
 
 * This mod has been exclusively developed and tested on Linux so far, using the native version of the game. While it should work on any platform, it is not guaranteed. If you get this mod working (or not), I'd appreciate feedback.
-* This mod makes use of [MQTTnet](https://github.com/dotnet/MQTTnet) for the actual communication with the MQTT broker. This should make it relatively stable against future updates, but given the game just released into Early Access, who knows.
-* Unlike a lot of other mods currently out there, this mod exclusively uses hooks already provided by the StS2 API and does not rely on Harmony at all.
+* This mod makes use of [MQTTnet](https://github.com/dotnet/MQTTnet) for the actual communication with the MQTT broker.
+* Unlike a lot of other mods currently out there, this mod exclusively uses hooks already provided by the StS2 API and does not rely on Harmony at all. This should make it relatively stable against future updates, but given the game just released into Early Access, who knows.
 * If you liked this mod, also check out **[The Guy Mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3209372643)**, a fun custom character for the original Slay the Spire.
 
 ## License
