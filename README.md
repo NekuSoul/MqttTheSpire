@@ -18,12 +18,16 @@ Similarly, if there's something preventing you from connecting to a MQTT broker,
 Pull requests are also welcome.
 
 ## Installation
-TL;DR: Installation is similar to the manual installation of any other mod. 
+**Important**: You will need to have a working MQTT broker running before you can use this mod.
+
+Otherwise, the nstallation is similar to the manual installation process of any other mod. 
 
 1. Download the latest release.
 2. Extract the archive and copy 'MqttTheSpire' folder to `[STS2-Install-Dir]/mods/`.
 3. Edit the `config` file. (See below)
 4. Start the game.
+5. ???
+6. Profit.
 
 If the game shows that the mod loaded with errors, there's a high likelyhood that the connection to the MQTT broker could not be established. 
 
