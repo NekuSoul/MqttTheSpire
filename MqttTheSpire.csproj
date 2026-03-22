@@ -1,0 +1,20 @@
+<Project Sdk="Godot.NET.Sdk/4.5.1">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="sts2">
+      <HintPath>vendor/sts2.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MQTTnet" Version="5.1.0.1559" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config" />
+    <Content Include="LICENSE" />
+    <Content Include="MqttTheSpire.json" />
+    <Content Include="README.md" />
+  </ItemGroup>
+</Project>
