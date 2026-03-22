@@ -2,6 +2,7 @@
 vendor/
 MqttTheSpire.pck
 MqttTheSpire.zip
+*.sln.DotSettings.user
 
 # Godot 4+ specific ignores
 .godot/
