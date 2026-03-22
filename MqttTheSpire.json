@@ -1,5 +1,5 @@
 {
-    "id:": "nekusoul.mqttthespire",
+    "id": "nekusoul.mqttthespire",
 	"name": "MqttTheSpire",
 	"author": "NekuSoul",
 	"description": "MQTT connection for Slay the Spire 2",
