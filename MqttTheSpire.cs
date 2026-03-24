@@ -118,60 +118,17 @@ public static class MqttTheSpire
 
     #region MqttTopics
 
-    private static void PublishTotalFloor()
-    {
-        PublishMqttTopic("run/total_floor", _runState?.TotalFloor);
-    }
-
-    private static void PublishAct()
-    {
-        PublishMqttTopic("run/current_act", _runState?.CurrentActIndex);
-    }
-
-    private static void PublishRunStart()
-    {
-        PublishMqttTopic("run/start_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
-    }
-
-    private static void PublishAscensionLevel()
-    {
-        PublishMqttTopic("run/ascension_level", _runState?.AscensionLevel);
-    }
-
-    private static void PublishCharacter()
-    {
-        PublishMqttTopic("run/player/character", _player.Character.Id.Entry);
-    }
-
-    private static void PublishRoomType()
-    {
-        PublishMqttTopic("run/room_type", _runState?.CurrentRoom?.RoomType);
-    }
-
-    private static void PublishGameMode()
-    {
-        PublishMqttTopic("run/game_mode", _runState?.GameMode);
-    }
-
-    private static void PublishPlayerGold()
-    {
-        PublishMqttTopic("run/player/gold", _player.Gold);
-    }
-
-    private static void PublishPlayerMaxHp()
-    {
-        PublishMqttTopic("run/player/max_hp", _player.Creature.MaxHp);
-    }
-
-    private static void PublishPlayerHp()
-    {
-        PublishMqttTopic("run/player/current_hp", _player.Creature.CurrentHp);
-    }
-
-    private static void PublishPlayerBlock()
-    {
-        PublishMqttTopic("run/player/current_block", _player.Creature.Block);
-    }
+    private static void PublishTotalFloor() => PublishMqttTopic("run/total_floor", _runState?.TotalFloor);
+    private static void PublishAct() => PublishMqttTopic("run/current_act", _runState?.CurrentActIndex);
+    private static void PublishRunStart() => PublishMqttTopic("run/start_time", DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss"));
+    private static void PublishAscensionLevel() => PublishMqttTopic("run/ascension_level", _runState?.AscensionLevel);
+    private static void PublishCharacter() => PublishMqttTopic("run/player/character", _player.Character.Id.Entry);
+    private static void PublishRoomType() => PublishMqttTopic("run/room_type", _runState?.CurrentRoom?.RoomType);
+    private static void PublishGameMode() => PublishMqttTopic("run/game_mode", _runState?.GameMode);
+    private static void PublishPlayerGold() => PublishMqttTopic("run/player/gold", _player.Gold);
+    private static void PublishPlayerMaxHp() => PublishMqttTopic("run/player/max_hp", _player.Creature.MaxHp);
+    private static void PublishPlayerHp() => PublishMqttTopic("run/player/current_hp", _player.Creature.CurrentHp);
+    private static void PublishPlayerBlock() => PublishMqttTopic("run/player/current_block", _player.Creature.Block);
 
     #endregion
 
