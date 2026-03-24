@@ -48,17 +48,18 @@ Otherwise, the game will try to load the `config.json` file as a mod (and fail).
 All topics are prefixed with the value of `Topic` from the config (e.g.: `slay_the_spire_2/run/total_floor`).  
 **Important**: Topics are not immediately published when the game starts. Starting a run should publish most of these, though.
 
-| Subtopic                | Description                                                   | Example             |
-|-------------------------|---------------------------------------------------------------|---------------------|
-| `run/start_time`        | Timestamp when the last run started. (`yyyy-MM-dd HH:mm:ss`). | 2026-03-22 16:52:47 |
-| `run/ascension_level`   | The current ascension level.                                  | 4                   |
-| `run/player/character`  | The character ID being played.                                | IRONCLAD            |
-| `run/game_mode`         | Current game mode.                                            | Standard            |
-| `run/total_floor`       | Total floors climbed.                                         | 16                  |
-| `run/room_type`         | Type of the current room.                                     | Elite               |
-| `run/player/gold`       | Current gold amount.                                          | 379                 |
-| `run/player/max_hp`     | Maximum HP.                                                   | 72                  |
-| `run/player/current_hp` | Current HP.                                                   | 37                  |
+| Subtopic                   | Description                                                   | Example             |
+|----------------------------|---------------------------------------------------------------|---------------------|
+| `run/start_time`           | Timestamp when the last run started. (`yyyy-MM-dd HH:mm:ss`). | 2026-03-22 16:52:47 |
+| `run/ascension_level`      | The current ascension level.                                  | 4                   |
+| `run/player/character`     | The character ID being played.                                | IRONCLAD            |
+| `run/game_mode`            | Current game mode.                                            | Standard            |
+| `run/total_floor`          | Total floors climbed.                                         | 16                  |
+| `run/room_type`            | Type of the current room.                                     | Elite               |
+| `run/player/gold`          | Current gold amount.                                          | 379                 |
+| `run/player/max_hp`        | Maximum HP.                                                   | 72                  |
+| `run/player/current_hp`    | Current HP.                                                   | 37                  |
+| `run/player/current_block` | Current Block.                                                | 8                   |
 
 ## A few additional notes
 

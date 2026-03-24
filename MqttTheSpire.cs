@@ -64,6 +64,7 @@ public static class MqttTheSpire
         _player.GoldChanged += OnPlayerGoldChanged;
         _player.Creature.MaxHpChanged += OnPlayerMaxHpChanged;
         _player.Creature.CurrentHpChanged += OnPlayerHpChanged;
+        _player.Creature.BlockChanged += OnPlayerBlockChanged;
     }
 
     private static void OnRunStarted(RunState runState)
@@ -106,6 +107,11 @@ public static class MqttTheSpire
     private static void OnPlayerHpChanged(int target, int current)
     {
         PublishPlayerHp();
+    }
+
+    private static void OnPlayerBlockChanged(int target, int current)
+    {
+        PublishPlayerBlock();
     }
 
     #endregion
@@ -160,6 +166,11 @@ public static class MqttTheSpire
     private static void PublishPlayerHp()
     {
         PublishMqttTopic("run/player/current_hp", _player.Creature.CurrentHp);
+    }
+
+    private static void PublishPlayerBlock()
+    {
+        PublishMqttTopic("run/player/current_block", _player.Creature.Block);
     }
 
     #endregion
